@@ -482,7 +482,7 @@ h1 {
   justify-content: center;
 }
 
-.mark {
+.team-item {
   list-style-type: none;
   justify-content: center;
   border-radius: 0px 0px 4px 4px;
@@ -493,7 +493,7 @@ h1 {
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.mark img {
+.team-item img {
   display: block;
 }
 .mark-fullname {
@@ -519,22 +519,7 @@ h1 {
   color: var(--SLATE);
   text-align: center;
 }
-.tom {
-  list-style-type: none;
-  align-items: center;
-  margin-right: 24px;
-  justify-content: center;
-  text-align: center;
-  border-radius: 0px 0px 4px 4px;
-  background: var(--WHITE, #fff);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
 
-.tom img {
-  display: block;
-}
 .tom-fullname {
   color: var(--NAVY-BLUE);
   font-family: Roboto;
@@ -552,21 +537,7 @@ h1 {
   line-height: 24px;
   letter-spacing: 0.32px;
 }
-.camila {
-  list-style-type: none;
-  border-radius: 0px 0px 4px 4px;
-  margin-right: 24px;
-  justify-content: center;
-  text-align: center;
-  background: var(--WHITE, #fff);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
 
-.camila img {
-  display: block;
-}
 .camila-fullname {
   color: var(--NAVY-BLUE);
   font-family: Roboto;
@@ -586,21 +557,6 @@ h1 {
   letter-spacing: 0.32px;
 }
 
-.daniel {
-  list-style-type: none;
-  border-radius: 0px 0px 4px 4px;
-  margin-right: 24px;
-  text-align: center;
-  justify-content: center;
-  background: var(--WHITE, #fff);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-}
-
-.daniel img {
-  display: block;
-}
 .daniel-fullname {
   color: var(--NAVY-BLUE);
   font-family: Roboto;
@@ -791,6 +747,10 @@ footer.logo {
   @media (min-width: 768px) {
     .container {
       width: 768px;
+    }
+    .about-item,
+    .team-item {
+      flex-basis: calc(100% / 2 - 30px);
     }
   }
 
